@@ -7,29 +7,32 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import { ROUTES } from "./utils/constants";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          {/* Public Routes */}
-          <Route path={ROUTES.HOME} element={<Home />} />
-          <Route path={ROUTES.LOGIN} element={<Login />} />
-          <Route path={ROUTES.REGISTER} element={<Register />} />
+    <ErrorBoundary>
+      <Router>
+        <Layout>
+          <Routes>
+            {/* Public Routes */}
+            <Route path={ROUTES.HOME} element={<Home />} />
+            <Route path={ROUTES.LOGIN} element={<Login />} />
+            <Route path={ROUTES.REGISTER} element={<Register />} />
 
-          {/* Protected Routes */}
-          <Route
-            path={ROUTES.DASHBOARD}
-            element={
-              <PrivateRoute>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          />
-        </Routes>
-      </Layout>
-    </Router>
+            {/* Protected Routes */}
+            <Route
+              path={ROUTES.DASHBOARD}
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }
+            />
+          </Routes>
+        </Layout>
+      </Router>
+    </ErrorBoundary>
   );
 }
 
