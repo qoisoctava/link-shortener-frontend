@@ -8,7 +8,7 @@ import {
   Alert,
   Spinner,
 } from "react-bootstrap";
-import linkService from "../services/LinkService";
+import linkService from "../services/linkService";
 import CreateLinkModal from "../components/Links/CreateLinkModal";
 import LinkCard from "../components/Links/LinkCard";
 import EditLinkModal from "../components/Links/EditLinkModal";

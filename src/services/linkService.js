@@ -74,4 +74,6 @@ class LinkService {
   }
 }
 
-export default new LinkService();
+// Fix for ESLint warning - assign to variable before exporting
+const linkService = new LinkService();
+export default linkService;
