@@ -91,6 +91,7 @@ function Register() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Enter your email"
+                    autoComplete="email"
                     required
                     autoFocus
                   />
@@ -107,6 +108,7 @@ function Register() {
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="Create a password"
+                    autoComplete="new-password"
                     required
                   />
                   <Form.Text className="text-muted">
@@ -122,6 +124,7 @@ function Register() {
                     value={formData.confirmPassword}
                     onChange={handleChange}
                     placeholder="Confirm your password"
+                    autoComplete="new-password"
                     required
                   />
                 </Form.Group>

@@ -91,6 +91,7 @@ function EditLinkModal({ show, onHide, onUpdate, link }) {
               value={formData.originalUrl}
               onChange={handleChange}
               placeholder="https://example.com"
+              autoComplete="off"
               required
             />
           </Form.Group>
@@ -102,6 +103,7 @@ function EditLinkModal({ show, onHide, onUpdate, link }) {
               name="customShortCode"
               value={formData.customShortCode}
               onChange={handleChange}
+              autoComplete="off"
               pattern="[a-zA-Z0-9_-]+"
               minLength={3}
               maxLength={20}

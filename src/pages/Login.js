@@ -77,6 +77,7 @@ function Login() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Enter your email"
+                    autoComplete="email"
                     required
                     autoFocus
                   />
@@ -90,6 +91,7 @@ function Login() {
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="Enter your password"
+                    autoComplete="current-password"
                     required
                   />
                 </Form.Group>
