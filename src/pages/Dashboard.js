@@ -9,7 +9,7 @@ import {
   Form,
   InputGroup,
 } from "react-bootstrap";
-import linkService from "../services/linkService"; // Ensure this matches your actual file name exactly
+import linkService from "../services/linkService";
 import CreateLinkModal from "../components/Links/CreateLinkModal";
 import LinkCard from "../components/Links/LinkCard";
 import EditLinkModal from "../components/Links/EditLinkModal";
